@@ -1,0 +1,98 @@
+.wrapper {
+    position: absolute;
+    top: 50px;
+    left: 85%;
+}
+.wrapper-knight {
+    position: absolute;
+    top: -15px;
+    left: 65%;
+}
+.select__wrap{
+    width: 100px;
+    position: relative;
+    user-select: none;
+}
+.select__wrap .default__option{
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid #c96c1a;
+    padding-left: 0;
+
+}
+.select__wrap .default__option li {
+    list-style: none;
+    padding: 10px 10px 0 10px;
+}
+.select__wrap .default__option::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #c96c1a;
+    transition: 0.2s ease-in-out;
+}
+.select__wrap .select__ul{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+}
+.select__wrap .select__ul li {
+    list-style: none;
+    cursor: pointer;
+    border: 2px solid  #c96c1a;
+    padding: 10px 10px 0 10px;
+}
+.select__wrap .select__ul li:hover {
+    background: #fff4dd;
+
+}
+.select__wrap .select__ul li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.select__wrap .select__ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.select__wrap .option .icon {
+    background: url("../img/br.png") no-repeat 0 0;
+    height: 32px;
+    width: 40px;
+}
+.select__wrap .option.british .icon {
+    margin-left: 40px;
+}
+.select__wrap .option.br .icon{
+    background: url("../img/br.png")no-repeat 0 0;
+    margin-left: 40px;
+}
+.select__wrap .option.russia .icon {
+    background: url("../img/russian.png") no-repeat 0 0;
+    margin-left: 40px;
+}
+.select__wrap .option.english .icon {
+    background: url("../img/en.png") no-repeat 0 0;
+    margin-left: 40px;
+}
+.select__wrap.active .default__option::after {
+    transform: rotate(-180deg);
+}
+.select__wrap.active .select__ul{
+    visibility: visible;
+    opacity: 1;
+}
