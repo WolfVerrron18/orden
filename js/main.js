@@ -16,7 +16,7 @@ const selectUlLi = document.querySelectorAll('.select__ul li')
 selectUlLi.forEach( function (selectLi) {
     selectLi.addEventListener('click', function (e) {
         let currentLi = e.target.closest('.option')
-        let atr = currentLi.childNodes[0].nextSibling.getAttribute('data-language')
+            //let atr = currentLi.childNodes[0].nextSibling.getAttribute('data-language')
 
         window.localStorage.setItem("locale", atr)
 
