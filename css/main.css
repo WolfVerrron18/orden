@@ -45,7 +45,6 @@ p{
     margin-top: 35px;
 }
 .main-wrapper__info p:first-child{
-    margin-top: 0;
     text-indent: 20px;
 }
 .main-wrapper__link{
@@ -135,5 +134,19 @@ p{
     .main-wrapper__link {
         margin-top: 50px;
         text-align: center;
+    }
+}
+@media (max-width: 450px) {
+    .container-knight {
+        width: 320px;
+    }
+    .main-wrapper__title h1 {
+        font-size: 27px;
+    }
+    .main-wrapper__info {
+        max-width: 320px;
+    }
+    .main-wrapper__link a {
+        font-size: 30px;
     }
 }

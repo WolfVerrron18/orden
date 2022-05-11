@@ -82,12 +82,14 @@
     margin-left: 40px;
 }
 .select__wrap .option.russia .icon {
-    background: url("../img/russian.png") no-repeat 0 0;
+    background: url("../img/fr.png") no-repeat 0 0;
     margin-left: 40px;
+    background-size: 30px;
 }
 .select__wrap .option.english .icon {
-    background: url("../img/en.png") no-repeat 0 0;
+    background: url("../img/sp.png") no-repeat 0 0;
     margin-left: 40px;
+    background-size: 30px;
 }
 .select__wrap.active .default__option::after {
     transform: rotate(-180deg);

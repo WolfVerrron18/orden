@@ -26,7 +26,7 @@ p{
     text-align: center;
     z-index: 9;
     height: 1080px;
-    width: 1049px;
+    /*width: 1049px;*/
     position: relative;
 }
 .main-wrapper img{
@@ -42,6 +42,7 @@ p{
 .main-wrapper__title h1{
     font-size: 54px;
     font-weight: 400;
+    display: none;
 }
 .main-wrapper__title select{
     position: absolute;
@@ -54,6 +55,7 @@ p{
     margin-left: 170px;
     padding-top: 50px;
     z-index: 2;
+    display: none;
     position: relative;
 }
 .main-wrapper__info p{
@@ -66,6 +68,7 @@ p{
     position: absolute;
     bottom: 80px;
     left: 30%;
+    display: none;
 }
 .main-wrapper__link a{
     font-size: 30px;
@@ -82,10 +85,10 @@ p{
     .container{
         width: 800px;
     }
-    .main-wrapper {
-        height: 850px;
-        width: 800px;
-    }
+    /*.main-wrapper {*/
+    /*    height: 850px;*/
+    /*    width: 800px;*/
+    /*}*/
     .main-wrapper img {
         left: 50% !important;
         width: 800px;
@@ -162,10 +165,10 @@ p{
     .wrapper {
         top: 25px !important;
     }
-    .main-wrapper {
-        height: 600px;
-        width: 550px;
-    }
+    /*.main-wrapper {*/
+    /*    height: 600px;*/
+    /*    width: 550px;*/
+    /*}*/
     .main-wrapper img {
         left: 50% !important;
         width: 550px;
@@ -229,10 +232,10 @@ p{
     .container {
         width: 300px;
     }
-    .main-wrapper {
-        height: 450px;
-        width: 300px;
-    }
+    /*.main-wrapper {*/
+    /*    height: 450px;*/
+    /*    width: 300px;*/
+    /*}*/
     .main-wrapper img {
         left: 50% !important;
         width: 320px;

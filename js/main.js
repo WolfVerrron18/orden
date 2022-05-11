@@ -25,7 +25,7 @@ selectUlLi.forEach( function (selectLi) {
 
         hash = hash.substr(1)
          for (let key in langArr) {
-           // console.log(document.querySelector('.lang-'+key), key)
+            console.log(document.querySelector('.lang-'+key), key)
             document.querySelector('.lang-'+key).innerHTML = langArr[key][hash]
           }
     })
